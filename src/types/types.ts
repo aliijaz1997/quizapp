@@ -23,5 +23,5 @@ export type requiredcomponents = {
 export type finalquizdisplaytypes = {
     questions: string
     options : string[]
-    callhandle : (e:React.FormEvent<EventTarget>) => void
+    callhandle : (e:React.FormEvent<EventTarget> , ans : string) => void
 }
