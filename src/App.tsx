@@ -15,7 +15,7 @@ function App() {
   let [displayresult, setDisplayresult] = useState(false);
   // let [beginquiz, setBeginquiz] = useState(0)
 
-  console.log(beginquiz);
+  // console.log(beginquiz);
   // we have fetched data from services. Called it in this main app file.
   useEffect(() => {
 
