@@ -1,6 +1,7 @@
 import React from 'react';
 import { finalquizdisplaytypes } from '../types/types';
 import { useState } from 'react';
+import './Renderquizcomponents.css';
 const Quizdisplay: React.FC<finalquizdisplaytypes> = ({ questions, options, callhandle }) => {
     //    console.log(questions , options);
     // Have to make the ustate hook to update the user answer
@@ -14,24 +15,23 @@ const Quizdisplay: React.FC<finalquizdisplaytypes> = ({ questions, options, call
         setUseranswer(event.target.value);
     }
     return (
-        <div>
-            <h3 >
+        <div className = "quiz">
+            <div className = "question" >
                 {questions}
-            </h3>
-
+            </div>
             <form onSubmit={(e : React.FormEvent<EventTarget>) => callhandle ( e, useranswer)} >
                 {options.map((opt: string, index: number) => {
                     return (
-                        <div key={index}>
+                        <div key={index} className = "options">
                             <label>
-                                <input type="radio" name="options" required checked = {useranswer === opt} value={opt} onChange={storeclickedanswers} />
+                                <input type="radio" name="options"  required checked = {useranswer === opt} value={opt} onChange={storeclickedanswers} />
                                 {opt}
                             </label>
                         </div>
                     )
                 })}
 
-                <input type="submit" />
+                <input type="submit" className = "submitbutton" />
             </form>
         </div>
     )

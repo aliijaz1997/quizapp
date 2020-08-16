@@ -1,0 +1,28 @@
+.imageone {
+    width: 100px;
+    height: 60px;
+    float: left;
+    margin-top: -300px;
+    margin-left: 50px;
+}
+.imagetwo {   
+     width: 100px;
+    height: 160px;
+    float: left;
+    margin-top: -120px;
+    margin-left: 50px;
+}
+.imagethree {
+    width: 100px;
+    height: 60px;
+    float: left;
+    margin-top: -350px;
+    margin-left: 120px;
+}
+.imagefour {
+    width: 180px;
+    height: 120px;
+    float: left;
+    margin-top: -160px;
+    margin-left: 150px;
+}
