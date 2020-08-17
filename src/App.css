@@ -31,19 +31,26 @@ body {
         font-size: 500%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       text-align: center;
+      /* display: flex; */
     }
     .message {
         color: royalblue;
         font-size: 300%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
+        /* display: flex; */
+        /* padding: 20%; */
+    }
+    .result {
+        padding: 70px;
+        /* display: flex; */
     }
 
      .quiz {
-        text-align: left;
-        max-width: 800px;
+        text-align: center;
+        max-width: 1000px;
         border-radius: 10px;
-        height: 350px;
+        height: 350px auto;
         padding: 10px;
         box-shadow: 0px 5px 24px;
         border: 5px solid #5c5454;
@@ -54,7 +61,7 @@ body {
         /* min-width: 150px; */
         display: flex;
         flex-direction: column;
-       margin-left: 500px;
+       /* margin-left: 500px; */
     }
     .button {
         max-width: 100px;
@@ -75,7 +82,7 @@ body {
       .button:hover {opacity: 1}
     .question {
         font-size: 100%;
-        display: block;
+        display: flex;
         height: 100px;
     }
     .options {
@@ -83,7 +90,17 @@ body {
         padding: 5px;
         display: block;
         height: 40px;
+        display: flex;
+        text-align: center;
     }
+.loading {
+    display: flex;
+    color: lightslategrey;
+    text-align: center;
+    font-size: 500%;
+    padding: 20%;
+    margin-top: 10px;
+}    
 
 
 

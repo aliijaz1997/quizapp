@@ -26,3 +26,7 @@
     margin-top: -160px;
     margin-left: 150px;
 }
+.images {
+    display: flex;
+    flex-direction: column;
+}

@@ -47,7 +47,7 @@ function App() {
   }
   if (displayresult) {
     return (
-      <div>
+      <div className = "result">
         <h1 className="finalnotify">Quiz Completed</h1>
         <h3 className="message"> Number of questions are {renderquiz.length}</h3>
         <h3 className = "message"> You scored {result} out of {renderquiz.length} </h3>
@@ -55,7 +55,7 @@ function App() {
     )
   }
   if (!renderquiz.length)
-    return <h1>Data is loading ...</h1>
+    return <h1 className = "loading">Data is loading ...</h1>
 
 
   return (
