@@ -1,7 +1,7 @@
 import React from 'react';
 import { finalquizdisplaytypes } from '../types/types';
 import { useState } from 'react';
-import './Renderquizcomponents.css';
+import './../App.css';
 const Quizdisplay: React.FC<finalquizdisplaytypes> = ({ questions, options, callhandle }) => {
     //    console.log(questions , options);
     // Have to make the ustate hook to update the user answer
@@ -31,7 +31,7 @@ const Quizdisplay: React.FC<finalquizdisplaytypes> = ({ questions, options, call
                     )
                 })}
 
-                <input type="submit" className = "submitbutton" />
+                <input type="submit" className = "button" />
             </form>
         </div>
     )
