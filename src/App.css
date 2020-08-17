@@ -44,6 +44,7 @@ body {
     .result {
         padding: 70px;
         /* display: flex; */
+        max-width: 1000px;
     }
 
      .quiz {
